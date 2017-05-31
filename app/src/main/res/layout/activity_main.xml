@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16sp"
+    android:layout_height="match_parent"
+    tools:context="com.example.dimpy.scarnesdice.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your score : 0"
+        android:id="@+id/textView1"
+        android:textSize="20sp"
+        android:typeface="sans"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer's score : 0"
+        android:id="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:typeface="sans"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice1"
+        android:layout_below="@id/textView1"
+        android:id="@+id/diceImage"
+        android:padding="16sp"
+        android:maxHeight="100sp"
+        android:maxWidth="100sp"
+        android:scaleType="center"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colortrancyBlue"
+        android:id="@+id/buttonRoll"
+        android:padding="16sp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/diceImage"
+        android:text="Roll"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonHold"
+        android:elevation="200sp"
+        android:background="@color/colortrancyBlue"
+        android:padding="16sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/diceImage"
+        android:text="Hold"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonReset"
+        android:padding="16sp"
+        android:background="@color/colortrancyBlue"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/diceImage"
+        android:text="Reset"/>
+</RelativeLayout>
